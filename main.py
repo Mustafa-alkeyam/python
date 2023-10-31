@@ -37,16 +37,22 @@
 
 
 # for with in 
-parsone = {'name': 'mustafa',
-'age':'20',
-'jop': 'devlobar',
-'skils': ['java','python','html','css']} 
-print (parsone)
-for i in parsone:
-    print(i,':',parsone[i] )
+# parsone = {'name': 'mustafa',
+# 'age':'20',
+# 'jop': 'devlobar',
+# 'skils': ['java','python','html','css']} 
+# print (parsone)
+# for i in parsone:
+#     print(i,':',parsone[i] )
 
-n=50
-for i in range(0,n,2):
-print(i)
+# def myfunction():
+#     print("hello")
+# myfunction()  
 
-
+people = {'person1':{'name1':'mustafa', 'age1':'22', 'jop1':'developer'},
+          'person2':{'name2':'ahmad', 'age2':'25', 'jop2':'developer'},
+          'person3':{'name3':'khaled', 'age3':'28', 'jop3':'developer'}}  
+for i,r in people.items():
+    print(f"{i}:")
+    for n,b in r.items():
+        print(f"{n}: {b}")
