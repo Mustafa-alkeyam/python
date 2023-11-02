@@ -88,4 +88,16 @@ while True:
         person['jop'] = jop
         allperson.append(person)
         print("you added person successfuly")
-    else choice =='2':
+    elif choice == '2':
+        counter = 1
+        print("__"*20)
+
+        print('all person : ')
+        for i in allperson:
+            print('person ',counter)
+            for key in i:
+                print(key, ':',i[key])
+            counter+=1
+
+    elif choice == '3':
+        break
