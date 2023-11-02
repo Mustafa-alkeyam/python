@@ -50,9 +50,9 @@
 # myfunction()  
 
 people = {'person1':{'name1':'mustafa', 'age1':'22', 'jop1':'developer'},
-          'person2':{'name2':'ahmad', 'age2':'25', 'jop2':'developer'},
-          'person3':{'name3':'khaled', 'age3':'28', 'jop3':'developer'}}  
+          'person2':{'name2':'mustafa', 'age2':'22', 'jop2':'developer'},
+          'person3':{'name3':'mustafa', 'age3':'22', 'jop3':'developer'}}  
 for i,r in people.items():
     print(f"{i}:")
     for n,b in r.items():
-        print(f"{n}: {b}")
+        print()
