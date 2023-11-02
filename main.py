@@ -49,10 +49,43 @@
 #     print("hello")
 # myfunction()  
 
-people = {'person1':{'name1':'mustafa', 'age1':'22', 'jop1':'developer'},
-          'person2':{'name2':'mustafa', 'age2':'22', 'jop2':'developer'},
-          'person3':{'name3':'mustafa', 'age3':'22', 'jop3':'developer'}}  
-for i,r in people.items():
-    print(f"{i}:")
-    for n,b in r.items():
-        print()
+# people = {'person1':{'name1':'mustafa', 'age1':'22', 'jop1':'developer'},
+#           'person2':{'name2':'ahmad', 'age2':'28', 'jop2':'engener'},
+#           'person3':{'name3':'khaled', 'age3':'25', 'jop3':'techer'}}  
+# for i,r in people.items():
+#     print(f"{i}:")
+#     for n,b in r.items():
+#         print(f"{n} : {b}")
+
+
+# whiletest = True
+# i = 0
+# while whiletest :
+#     if i==5:
+#         continue
+#     i+=1
+#     if i==10:
+#         print(i)
+#         i+=1
+#         break
+
+allperson = []
+person = {}
+print("welcome to uor app")
+while True:
+    print('__'*20)
+    print('1 - add new person')
+    print('2 - see all person')
+    print('3 - exit')
+    choice = input('enter your choice')
+    if choice == '1':
+
+        name = input('enter the person name :')
+        age = input('enter the person age :')
+        jop = input('enter the person jop :')
+        person['name'] = name
+        person['age'] = age
+        person['jop'] = jop
+        allperson.append(person)
+        print("you added person successfuly")
+    else choice =='2':
