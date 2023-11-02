@@ -96,7 +96,7 @@ while True:
         for i in allperson:
             print('person ',counter)
             for key in i:
-                print(key, ':',i[key])
+                print('     ', key, ':',i[key])
             counter+=1
 
     elif choice == '3':
