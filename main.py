@@ -69,35 +69,45 @@
 #         i+=1
 #         break
 
-allperson = []
-person = {}
-print("welcome to uor app")
-while True:
-    print('__'*20)
-    print('1 - add new person')
-    print('2 - see all person')
-    print('3 - exit')
-    choice = input('enter your choice')
-    if choice == '1':
+# allperson = []
+# person = {}
+# print("welcome to uor app")
+# while True:
+#     print('__'*20)
+#     print('1 - add new person')
+#     print('2 - see all person')
+#     print('3 - exit')
+#     choice = input('enter your choice')
+#     if choice == '1':
 
-        name = input('enter the person name :')
-        age = input('enter the person age :')
-        jop = input('enter the person jop :')
-        person['name'] = name
-        person['age'] = age
-        person['jop'] = jop
-        allperson.append(person)
-        print("you added person successfuly")
-    elif choice == '2':
-        counter = 1
-        print("__"*20)
+#         name = input('enter the person name :')
+#         age = input('enter the person age :')
+#         jop = input('enter the person jop :')
+#         person['name'] = name
+#         person['age'] = age
+#         person['jop'] = jop
+#         allperson.append(person)
+#         print("you added person successfuly")
+#     elif choice == '2':
+#         counter = 1
+#         print("__"*20)
 
-        print('all person : ')
-        for i in allperson:
-            print('person ',counter)
-            for key in i:
-                print('     ', key, ':',i[key])
-            counter+=1
+#         print('all person : ')
+#         for i in allperson:
+#             print('person ',counter)
+#             for key in i:
+#                 print('     ', key, ':',i[key])
+#             counter+=1
 
-    elif choice == '3':
-        break
+#     elif choice == '3':
+#         break
+list1 =['a','s','e','y','j','6','9']
+list1.sort()
+print(list1)
+list1.reverse()
+print(list1.count('9'))
+print(list1.__len__())
+list1.pop(5)
+
+
+
