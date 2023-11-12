@@ -101,13 +101,13 @@
 
 #     elif choice == '3':
 #         break
-list1 =['a','s','e','y','j','6','9']
-list1.sort()
-print(list1)
-list1.reverse()
-print(list1.count('9'))
-print(list1.__len__())
-list1.pop(5)
+# list1 =['a','s','e','y','j','6','9']
+# list1.sort()
+# print(list1)
+# list1.reverse()
+# print(list1.count('9'))
+# print(list1.__len__())
+# list1.pop(5)
 
 
 
