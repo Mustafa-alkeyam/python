@@ -118,7 +118,33 @@ while True:
             print('enter the skills  ',i + 1,':')
             skills.append(input())
 
-        pasword = input('enter the pasword : ')
+        while True:
+            pasword = input('enter the pasword : ')
+            upperChar = False
+            lowerChar = False
+            numberChar = False
+            if len(pasword) >=8:
+                for i in pasword:
+                    if i.isupper():
+                        upperChar = True
+                    elif i.islower():
+                        lowerChar = True
+                    elif i.isdigit():
+                        numberChar = True
+                if upperChar and lowerChar and numberChar:
+                    print('the pasword is strong')
+                    break
+                else:
+                    lis1 = [upperChar,lowerChar,numberChar]
+                    lis2 = ['1 upper char ,','1 lower char ,','1 number char ,']
+                    lis3 = ''
+                    for i in range(len(lis1)):
+                        if not lis1[i]:
+                            lis3+=lis2[i]
+                    print('the pasword must have at least ',lis3)
+
+            else:
+                print('the pasword is shorter that 8 char')
 
         person={
             'name' : name,
